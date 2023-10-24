@@ -4,8 +4,6 @@
  */
 
 #include <iostream>
-#include <cstdlib>
-#include <time.h>
 #include "task_1.h"
 #include "task_2.h"
 

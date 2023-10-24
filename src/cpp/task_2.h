@@ -1,3 +1,5 @@
+#include <cstdlib>
+#include <time.h>
 
 void secondTask(){
     int num;
