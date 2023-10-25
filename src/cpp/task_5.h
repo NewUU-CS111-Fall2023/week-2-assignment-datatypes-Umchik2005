@@ -29,13 +29,13 @@ void fifthTask(){
         std::cin >> playerX >> playerY;
 
             if (playerX == opponentX && playerY == opponentY){
-                std::cout << "You died" << std::endl;
+                std::cout << "Player died" << std::endl;
                 break;
             } else if((playerX < 0 && playerX > size) || (playerY < 0 && playerY > size)){ // The player should be in the map
-                std::cout << "You died" << std::endl;
+                std::cout << "Player died" << std::endl;
                 break;   
             } else {
-                std::cout << "Character is alive " << std::endl;
+                std::cout << "Player is alive " << std::endl;
             }
         tries++;
     } while (isPlayerAliive && tries < n);
