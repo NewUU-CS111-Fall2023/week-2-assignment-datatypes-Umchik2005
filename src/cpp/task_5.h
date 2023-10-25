@@ -21,7 +21,7 @@ void fifthTask(){
 
     opponentX = rand() % size;
     opponentY = rand() % size;
-
+    std::cout << "The enemy coordinates are(it's hint): " << opponentX  << " " << opponentY;
     do
     {
         
@@ -31,7 +31,7 @@ void fifthTask(){
             if (playerX == opponentX && playerY == opponentY){
                 std::cout << "Player died" << std::endl;
                 break;
-            } else if((playerX < 0 && playerX > size) || (playerY < 0 && playerY > size)){ // The player should be in the map
+            } else if((playerX < 0 && playerX > size) && (playerY < 0 && playerY > size)){ // The player should be in the map
                 std::cout << "Player died" << std::endl;
                 break;   
             } else {
@@ -39,5 +39,4 @@ void fifthTask(){
             }
         tries++;
     } while (isPlayerAliive && tries < n);
-    
 }
